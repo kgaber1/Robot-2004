@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Robot
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Robot\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Robot()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Robot\r\n
+comment2.params=
+comment2.target=boolean\ forwardMoveBlocked()
+comment2.text=\r\n\ postcondition\:\ returns\ true\ if\ this\ Robot\ has\ a\ wall\ immediately\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ in\ front\ of\ it,\ so\ that\ it\ cannot\ move\ forward;\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ otherwise,\ returns\ false\r\n\ \r\n
+comment3.params=
+comment3.target=void\ move()
+comment3.text=\ postcondition\:\ one\ move\ has\ been\ made\ according\ to\ the\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ specifications\ above\ and\ the\ state\ of\ this\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Robot\ has\ been\ updated\r\n
+comment4.params=
+comment4.target=int\ clearhall()
+comment4.text=\ postcondition\:\ no\ more\ items\ remain\ in\ the\ hallway;\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ returns\ the\ number\ of\ moves\ made\r\n
+comment5.params=
+comment5.target=boolean\ hallIsClear()
+comment5.text=\ postcondition\:\ return\ true\ if\ the\ hallway\ contains\ no\ items;\r\n\ \ otherwise,\ return\ false\r\n
+numComments=6
