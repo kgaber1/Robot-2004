@@ -5,6 +5,7 @@
  * @author (your name)
  * @version (a version number or a date)
  */
+import java.util.Arrays;
 public class Robot
 {
     // instance variables - replace the example below with your own
@@ -14,21 +15,25 @@ public class Robot
 
     /**
      * Constructor for objects of class Robot
+     * @param hall The array taken from tester listing items in the hall.
+     * @param pos The current position of the Robot
+     * @param facingRight checks to see if the robot is facing right.
      */
     public Robot()
     {
-      
+      this.hall = hall;
+      this.pos = pos;
+      this.facingRight = facingRight;
     }
 
     /**
-     * postcondition: returns true if this Robot has a wall immediately 
+     * returns true if this Robot has a wall immediately 
      *                in front of it, so that it cannot move forward;
      *                otherwise, returns false
-     * 
+     * @param facingRight checks to see if the robot is facing right.
      */  
     
-    private boolean forwardMoveBlocked()
-    {
+    private boolean forwardMoveBlocked() {
         if (pos == 0 && facingRight == false) {
             return true;
         }
@@ -38,7 +43,7 @@ public class Robot
         return false;
     }
     
-    /** postcondition: one move has been made according to the
+    /** one move has been made according to the
      *                 specifications above and the state of this
      *                 Robot has been updated
      */   
@@ -57,8 +62,9 @@ public class Robot
        }
     }
     
-    /** postcondition: no more items remain in the hallway; 
+    /**   checks to see if no more items remain in the hallway; 
      *                 returns the number of moves made
+     *   @param hallIsClear checks to see if the hallway contains no items;
      */
     public int clearhall() {
         int move = 0;
@@ -80,4 +86,5 @@ public class Robot
         } 
         return check;
     }
+
 }
